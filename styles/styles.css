@@ -87,12 +87,35 @@ cursor: pointer;
 nav ul li a:hover{
   color:maroon;
 }
-.back-video{
-  position: flex;
-  width: 100%;
-  z-index: -1;
-  margin: 0;
-  padding: 0;
+
+
+.about{
+  display: none;
+}
+
+nav ul li :hover .about {
+  display: block;
+  position: absolute;
+  background: rgba(119, 3, 3, 0.8);
+  margin-top: 1px;
+}
+
+nav ul li :hover .about ul {
+  display: block;
+  margin: 5px;
+}
+
+nav ul li :hover .about ul li{
+  width: 100px;
+  padding: 10px;
+  border-bottom: 1px dotted #fff;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+
+}
+nav ul li:hover .about ul li a:hover {
+  color: black;
 }
 
 .footer {
